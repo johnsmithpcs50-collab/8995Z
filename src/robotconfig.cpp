@@ -1,13 +1,13 @@
 #include "main.h"
 #include "robotconfig.h"
 // left motor group
-pros::MotorGroup left_motor_group({6, 10}, pros::MotorGears::green); // motors are broken
+pros::MotorGroup left_motor_group({1, 2}, pros::MotorGears::green); // motors are broken
 // right motor group
-pros::MotorGroup right_motor_group({2, 8}, pros::MotorGears::green); //motors ok
+pros::MotorGroup right_motor_group({3, 4}, pros::MotorGears::green); //motors ok
 
-pros::MotorGroup Lift({1, 5}, pros::MotorGears::green);
+pros::MotorGroup Lift({7, 6}, pros::MotorGears::green);
 
-pros::Motor RachetClaw({9}, pros::MotorGears::green);
+pros::Motor RachetClaw({8}, pros::MotorGears::green);
 
 
 
@@ -21,7 +21,7 @@ lemlib::Drivetrain drivetrain(&left_motor_group, // left motor group
 );
 
 // imu
-pros::Imu imu(10);
+pros::Imu imu(20);
 // horizontal tracking wheel encoder
 pros::Rotation horizontal_encoder(20);
 // vertical tracking wheel encoder
