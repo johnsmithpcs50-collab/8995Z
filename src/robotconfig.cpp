@@ -5,7 +5,7 @@ pros::MotorGroup left_motor_group({-1, -2}, pros::MotorGears::green); // motors 
 // right motor group
 pros::MotorGroup right_motor_group({3, 4}, pros::MotorGears::green); //motors ok
 
-pros::MotorGroup Lift({7, -6}, pros::MotorGears::blue);
+pros::MotorGroup Lift({7, -6}, pros::MotorGears::red);
 
 pros::Motor RachetClaw({8}, pros::MotorGears::green); 
 
